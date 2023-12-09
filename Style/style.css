@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+body{
+    font: Brush Script MT;
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    min-height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/Pictures/bg2.jpg);
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    color: #0096FF;
+}
+
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom : 0;
+    left: 0;
+    background-color: #0096FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Home Page */
+.main{
+    align-items: center;
+    display: flex;
+}
+
+.description h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    color: #0096FF;
+}
+
+.description p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.whales{
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.whale{
+    margin-right: 10px;
+}
+
+.navi ul{
+    flex: 1;
+    text-align: center;
+}
+
+.navi ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+    font-size: 17px;
+    background: #0096FF;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+
+.c{
+    width: 40px;
+    height: auto;
+}
+
+.rights{
+    display: flex;
+    align-items: center;
+}
+
+.rights p{
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+/* Gallery Page */
+.gall_head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+
+.gall{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img{
+    width: 100%;
+    height: 300px;
+}
+
+.gallery p{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(42,42,176,0.6530987394957983) 39%, rgba(0,212,255,1) 100%);
+}
+
+.gallery a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.gallery{
+    margin: 5px;
+    border: 4px solid #A3A8F6;
+    width: 430px;
+    background-color: #FFFFFF;
+}
+
+/* About Page */
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+.abt-head{
+    text-align: center;
+    font-size: 50px;
+}
+
+.class{
+    float: right;
+}
+
+.sec_head{
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.abt_whale img{
+    height: 334px;
+    width: 500px;
+}
+
+.whole{
+    display: flex;
+}
+
+.abt p{
+    margin-bottom: 7px;
+}
+
+.abt{
+    margin-right: px;
+    text-align: left;
+    font-size: 20px ;
+    padding: 10px;
+    background-color: #A3A8F6;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+}
+
+.abt h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.descri{
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #A3A8F6;
+    border-radius: 10px;font-size: 20px;
+    width: 500px;
+}
+
+.descri h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Reference page */
+.ref_main{
+    text-align: center;
+}
+
+.ref_head{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.ref{
+    width: 445px;
+    padding: 7px;
+    background-color: #A3A8F6;
+    border-radius: 10px;
+}
+
+.ref h2{
+    text-align: center;
+}
+
+.ref ul li{
+    list-style: none;
+    font-size: 14px;
+}
